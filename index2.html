@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dashboard</title>
+    <style>
+        .row {
+          display: flex;
+        }
+        
+        .column {
+          flex: 50%;
+          /* padding: 10px;
+          height: 300px; */
+        }
+      </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1 class="dashboard-title">Dashboard</h1>
+        <button class="profile-button">Profile</button>
+
+        <div class="row">
+
+            <div class="dashboard-section graph-metrics-section">
+                <div class="row">
+                    <div class="column">
+                      <h2>Column 1</h2>
+                      <p>yap yap yap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-section variable-comparison-section">
+                <div class="row">
+                    <div class="column">
+                      <h2>Column 1</h2>
+                      <p>yap yap yap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-column">
+            <div class="dashboard-section kpi-metrics-section">
+                <div class="row">
+                    <div class="column">
+                      <h2>Column 1</h2>
+                      <p>yap yap yap</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="dashboard-section completion-status-section">
+                <div class="row">
+                    <div class="column">
+                      <h2>Column 1</h2>
+                      <p>yap yap yap</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-section additional-section">
+                <div class="row">
+                    <div class="column">
+                      <h2>Column 1</h2>
+                      <p>yap yap yap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "big dashboard-column">
+            <div class="dashboard-section big-section">
+                <div class="row">
+                    <div class="column">
+                      <h2>Column 1</h2>
+                      <p>yp</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+-------------------------------------------------
+
+CSS CODE
+
+body, h1, button, div {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #182231; 
+    font-family: Arial, sans-serif;
+    color: #c3d7f3;
+}
+
+.dashboard-title {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.profile-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 8px 16px;
+    background-color: #202e42; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #7da0d1;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dashboard-column {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.dashboard-section {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #202e42;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.graph-metrics-section p,
+.variable-comparison-section p,
+.kpi-metrics-section p,
+.completion-status-section p,
+.additional-section p {
+    font-weight: bold;
+    color: #7da0d1;
+}

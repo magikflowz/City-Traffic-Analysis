@@ -1,0 +1,19 @@
+{% comment %} {% extends "base.html" %} {% endcomment %}
+
+{% comment %} {% block title %}LOGIN {% endblock %} {% endcomment %}
+
+{% comment %} {% block content %} {% endcomment %}
+<div class="forms-container">
+
+    <form method="POST" action="{% url "login" %}">
+        <h2>ODOT Login</h2>
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+    </form>
+    
+    <form method="GET" action="}">
+        <button type="submit">Sign Up</button>
+    </form>
+</div>
+{% comment %} {% endblock %} {% endcomment %}
